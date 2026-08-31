@@ -56,6 +56,7 @@ Rules:
 - Never use assignments inside lambda expressions.
 - Every Streamlit widget (st.button, st.slider, st.text_input, st.checkbox, etc.) MUST have a unique key= argument.
 - Never EVER put commented lines in code
+- The code you make should be complete
 
 ======================================
 GENERAL CODE REQUIREMENTS
@@ -158,7 +159,7 @@ for msg in st.session_state.chat_history:
         messages.append(AIMessage(content=msg["content"]))
 
 if input_text:
-    messages.append(HumanMessage(content=input_text+"make sure the game works properly check if the playboard is visible and user friendly, look and your system prompt carefully and make the game with no errors or bugs, take your time to make the code, make sure the game updates every frame properly with from streamlit_autorefresh import st_autorefresh with no bugs and also DO NOT put commented lines in the code no matter what. also make the full code, DO NOT make it incomplete"))
+    messages.append(HumanMessage(content=input_text+"make sure the game works properly check if the playboard is visible and user friendly, look and your system prompt carefully and make the game with no errors or bugs, take your time to make the code, make sure the game updates every frame properly with from streamlit_autorefresh import st_autorefresh with no bugs and also DO NOT put commented lines in the code no matter what. also make the full code"))
 
     try:
         with st.spinner("Building mainframe..."):
