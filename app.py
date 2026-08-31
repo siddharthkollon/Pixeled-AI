@@ -15,7 +15,7 @@ load_dotenv()
 groq_api_key = st.secrets["GORQ_API_KEY"]
 
 
-Model = ChatGroq(model="openai/gpt-oss-120b",groq_api_key=groq_api_key,max_tokens=30000,reasoning_effort="high")
+Model = ChatGroq(model="openai/gpt-oss-120b",groq_api_key=groq_api_key,max_completion_tokens=65536,reasoning_effort="high")
 
 
 
